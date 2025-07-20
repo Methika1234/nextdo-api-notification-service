@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "NextDo API Notification Service",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}
