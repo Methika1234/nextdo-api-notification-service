@@ -1,0 +1,23 @@
+meta {
+  name: Hello World
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:8001/
+  body: none
+  auth: none
+}
+
+assert {
+  res.status: eq 200
+  res.body: eq Hello World!
+}
+
+tests {
+  test("should return Hello World message", function() {
+    expect(res.getStatus()).to.equal(200);
+    expect(res.getBody()).to.equal("Hello World!");
+  });
+}
